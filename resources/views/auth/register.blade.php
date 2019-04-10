@@ -61,7 +61,7 @@
                             <input type="number" id="phone_number"
                                    class="form-control{{ $errors->has('phone_number') ? ' is-invalid' : '' }}"
                                    name="phone_number" value="{{old('phone_number')}}"
-                                        placeholder="Phone Number" required="required">
+                                        placeholder="Phone Number" required="required" minlength="4" maxlength="8">
                             <p class="help-block text-danger"></p>
                             @if ($errors->has('phone_number'))
                                 <span class="invalid-feedback" role="alert">

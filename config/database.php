@@ -41,17 +41,17 @@ return [
 
         'mysql' => [
             'driver' => 'mysql',
-            'host' => env('DB_HOST', '127.0.0.1'),
+            'host' => env('DB_HOST', 'http://enudb.wdd.napier.ac.uk'),
 
-            'database' => env('DB_DATABASE', 'forge'),
-            'username' => env('DB_USERNAME', 'forge'),
-            'password' => env('DB_PASSWORD', ''),
+            'database' => env('DB_DATABASE', '40417376'),
+            'username' => env('DB_USERNAME', '40417376'),
+            'password' => env('DB_PASSWORD', '9JPBmyZ7'),
             'unix_socket' => env('DB_SOCKET', ''),
             'charset' => 'utf8mb4',
             'collation' => 'utf8mb4_unicode_ci',
             'prefix' => '',
             'strict' => false,
-//            'engine' => null,
+            'engine' => null,
         ],
 
         'pgsql' => [

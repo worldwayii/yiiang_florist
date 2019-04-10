@@ -13,6 +13,7 @@
 
 Route::get('/', 'HomeController@index');
 Route::get('registered', 'Auth\RegisterController@registered');
+Route::get('dashboard', 'HomeController@showDashboard');
 
 Auth::routes();
 

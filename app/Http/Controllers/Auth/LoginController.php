@@ -24,8 +24,19 @@ class LoginController extends Controller
      * Where to redirect users after login.
      *
      * @var string
+     * @return path
      */
-    protected $redirectTo = '/';
+
+//    protected $redirectTo = '/';
+    protected function redirectPath()
+    {
+        if (Auth::user()->user_type == 1) {
+            return '/dashboard';
+        } else {
+            return '/';
+        }
+    }
+
 
     /**
      * Create a new controller instance.

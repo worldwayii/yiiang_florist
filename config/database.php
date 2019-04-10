@@ -41,7 +41,7 @@ return [
 
         'mysql' => [
             'driver' => 'mysql',
-            'host' => env('DB_HOST', 'http://enudb.wdd.napier.ac.uk'),
+            'host' => env('DB_HOST', 'enudb.wdd.napier.ac.uk'),
 
             'database' => env('DB_DATABASE', '40417376'),
             'username' => env('DB_USERNAME', '40417376'),

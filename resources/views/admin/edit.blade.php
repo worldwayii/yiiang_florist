@@ -36,7 +36,7 @@
                         <label for="inputEmail">Email address</label>
                     </div>
                 </div>
-               
+
                 <a class="btn btn-primary btn-block" href="login.html">Register</a>
             </form>
             <div class="text-center">

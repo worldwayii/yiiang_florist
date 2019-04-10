@@ -20,9 +20,9 @@
 
 <!-- Stylesheet
     ================================================== -->
-<link rel="stylesheet" type="text/css"  href="{{asset('css/style.css'}}">
-<link rel="stylesheet" type="text/css" href="{{'asset("css/nivo-lightbox/nivo-lightbox.css")}}">
-<link rel="stylesheet" type="text/css" href="{{'asset("css/nivo-lightbox/default.css")}}">
+<link rel="stylesheet" type="text/css"  href="{{asset('css/style.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('css/nivo-lightbox/nivo-lightbox.css')}}">
+<link rel="stylesheet" type="text/css" href="css/nivo-lightbox/default.css">
 <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Dancing+Script:400,700" rel="stylesheet">

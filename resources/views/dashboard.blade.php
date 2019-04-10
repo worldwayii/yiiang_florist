@@ -14,6 +14,13 @@
     <div class="row">
         <div class="col-xl-3 col-sm-6 mb-3">
             <div class="card text-white bg-primary o-hidden h-100">
+                @if(\Session::has('success'))
+                    <span><div class="alert-success">
+                            <ul>
+                                <li>{!! \Session::get('success') !!}</li>
+                            </ul>
+                        </div></span>
+                @endif
                 <div class="card-body">
                     <div class="card-body-icon">
                         <i class="fas fa-fw fa-comments"></i>
@@ -94,6 +101,7 @@
                         <th>Email</th>
                         <th>Phone Number</th>
                         <th>Post Code</th>
+                        <th>Action</th>
                     </tr>
                     </thead>
                     <tfoot>
@@ -103,6 +111,7 @@
                         <th>Email</th>
                         <th>Phone Number</th>
                         <th>Post Code</th>
+                        <th>Action</th>
                     </tr>
                     </tfoot>
                     <tbody>
@@ -113,6 +122,18 @@
                         <td>{{$user->email}}</td>
                         <td>{{$user->phone_number}}</td>
                         <td>{{$user->post_code}}</td>
+                        <td>
+                            <a href="{{url('edit/'.$user->id)}}">
+                                <button class="btn btn-success">
+                                    Edit
+                                </button>
+                            </a>
+                            <a href="{{url('delete/'.$user->id)}}">
+                                <button class="btn btn-danger">
+                                    Delete
+                                </button>
+                            </a>
+                        </td>
                     </tr>
                     @endforeach
                     </tbody>

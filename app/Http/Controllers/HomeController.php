@@ -33,4 +33,20 @@ class HomeController extends Controller
 
         return view('dashboard', compact('users'));
     }
+
+    public function editUser($id)
+    {
+
+        $user = User::find($id);
+//        dd($user);
+        return view('admin.edit', compact('user'));
+    }
+
+    public function deleteUser($id)
+    {
+
+        User::whhere('id', $id)->delete();
+
+        return Redirect::back()->with('success','User has been deleted');
+    }
 }

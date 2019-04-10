@@ -6,7 +6,7 @@
 
 <!-- Favicons
     ================================================== -->
-<link rel="shortcut icon" href="/img/favicon/favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="{{asset('/img/favicon/favicon.ico')}}" type="image/x-icon">
 <link rel="apple-touch-icon" href="/img/favicon/apple-icon-60x60.png">
 <link rel="apple-touch-icon" sizes="72x72" href="/img/favicon/apple-icon-72x72.png">
 <link rel="apple-touch-icon" sizes="114x114" href="/img/favicon/apple-icon-144x144.png">
@@ -15,14 +15,14 @@
 <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png">
 
 <!-- Bootstrap -->
-<link rel="stylesheet" type="text/css"  href="css/bootstrap.css">
-<link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.css">
+<link rel="stylesheet" type="text/css"  href="{{asset('css/bootstrap.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('fonts/font-awesome/css/font-awesome.css')}}">
 
 <!-- Stylesheet
     ================================================== -->
-<link rel="stylesheet" type="text/css"  href="css/style.css">
-<link rel="stylesheet" type="text/css" href="css/nivo-lightbox/nivo-lightbox.css">
-<link rel="stylesheet" type="text/css" href="css/nivo-lightbox/default.css">
+<link rel="stylesheet" type="text/css"  href="{{asset('css/style.css'}}">
+<link rel="stylesheet" type="text/css" href="{{'asset("css/nivo-lightbox/nivo-lightbox.css")}}">
+<link rel="stylesheet" type="text/css" href="{{'asset("css/nivo-lightbox/default.css")}}">
 <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Dancing+Script:400,700" rel="stylesheet">

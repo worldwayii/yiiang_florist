@@ -16,6 +16,7 @@ Route::get('registered', 'Auth\RegisterController@registered');
 Route::get('dashboard', 'HomeController@showDashboard');
 Route::get('edit/{id}', 'HomeController@editUser');
 Route::get('delete/{id}', 'HomeController@deleteUser');
+Route::get('order', 'HomeController@order')->middleware('auth');;
 
 Auth::routes();
 

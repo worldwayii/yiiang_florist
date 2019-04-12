@@ -38,7 +38,6 @@ class HomeController extends Controller
     {
 
         $user = User::find($id);
-//        dd($user);
         return view('admin.edit', compact('user'));
     }
 
@@ -48,5 +47,10 @@ class HomeController extends Controller
         User::whhere('id', $id)->delete();
 
         return Redirect::back()->with('success','User has been deleted');
+    }
+
+    public function order()
+    {
+        return view('user');
     }
 }

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Auth;
 
+use Auth;
 use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 
@@ -30,11 +31,13 @@ class LoginController extends Controller
 //    protected $redirectTo = '/';
     protected function redirectPath()
     {
-        if (Auth::user()->user_type == 1) {
+        if (Auth::user()->user_type == 2) {
+
             return '/dashboard';
-        } else {
-            return '/';
         }
+
+            return '/';
+
     }
 
 

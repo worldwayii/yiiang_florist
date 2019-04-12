@@ -11,7 +11,11 @@
                     <div class="about-text">
                         <h2>Our Flower Garden</h2>
                         <hr>
-                        <p>A short-lived perennial, lupine is found from California to British Columbia. Plants do not require a lot of care. Give them a sunny spot, ample water and well-drained soil and you’ll be hearing oohs and aahs for seasons to come. Lupines make ​a terrific addition to borders, xeric (water conserving) gardens, or scattered.</p>
+                        <p>A short-lived perennial, lupine is found from California to British Columbia.
+                            Plants do not require a lot of care. Give them a sunny spot, ample water and
+                            well-drained soil and you’ll be hearing oohs and aahs for seasons to come.
+                            Lupines make ​a terrific addition to borders, xeric (water conserving) gardens,
+                            or scattered.</p>
 
                     </div>
                 </div>

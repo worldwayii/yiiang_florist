@@ -52,7 +52,7 @@
             <div class="container">
                 <div class="row">
                     <div class="intro-text">
-                        <h1>YiWaa Flourists</h1>
+                        <h1>YiWaa Florists</h1>
                         <p>Valentines / Welcomes / Romance...</p>
                         <a href="" class="btn btn-custom btn-lg page-scroll">Place an Order</a> </div>
                 </div>

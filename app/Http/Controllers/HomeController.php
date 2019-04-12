@@ -51,6 +51,6 @@ class HomeController extends Controller
 
     public function order()
     {
-        return view('user');
+        return view('user')->with('success','You just have logged in successfully');
     }
 }

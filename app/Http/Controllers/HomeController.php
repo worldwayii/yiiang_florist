@@ -41,6 +41,17 @@ class HomeController extends Controller
         return view('admin.edit', compact('user'));
     }
 
+    public function userUpdate(Request $request)
+    {
+        $user = User::find($request->userid);
+
+        $data = $request->all();
+        $user->update($data);
+
+        $request->session()->flash('alert-success', "User has been  updated");
+        return redirect('dashboard');
+    }
+
     public function deleteUser($id)
     {
 

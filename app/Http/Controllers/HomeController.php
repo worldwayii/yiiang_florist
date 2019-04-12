@@ -55,13 +55,13 @@ class HomeController extends Controller
     public function deleteUser($id)
     {
 
-        User::whhere('id', $id)->delete();
+        User::where('id', $id)->delete();
 
-        return Redirect::back()->with('success','User has been deleted');
+        return \Redirect::back()->withMessage('success','User has been deleted');
     }
 
     public function order()
     {
-        return view('user')->with('success','You just have logged in successfully');
+        return view('user')->withMessage('success','You just have logged in successfully');
     }
 }

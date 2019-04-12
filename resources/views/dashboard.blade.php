@@ -15,11 +15,10 @@
         <div class="col-xl-3 col-sm-6 mb-3">
             <div class="card text-white bg-primary o-hidden h-100">
                 @if(\Session::has('success'))
-                    <span><div class="alert-success">
-                            <ul>
-                                <li>{!! \Session::get('success') !!}</li>
-                            </ul>
-                        </div></span>
+                    <div class="alert alert-info error-message animated fadeInDown alt alert-dismissible" role="alert">
+                        <span class="error-message-content">{{ $message }}</span>
+                        <a class="close" data-dismiss="alert">&times;</a>
+                    </div>
                 @endif
                 <div class="card-body">
                     <div class="card-body-icon">
